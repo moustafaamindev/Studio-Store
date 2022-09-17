@@ -1,0 +1,110 @@
+@use "./scss/variables" as *;
+
+header {
+  // start navbar//
+  nav {
+    margin: 42px 0 40px;
+    .navbar-brand {
+      width: 120px;
+      height: 34px;
+      padding: 0;
+      margin: 0;
+      img {
+        max-width: 100%;
+      }
+    }
+    svg {
+      font-size: 25px;
+    }
+    ul {
+      li {
+        :hover {
+          color: $four-color !important;
+        }
+      }
+      a {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 20px;
+        color: $first-color;
+        letter-spacing: 0.01em;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        margin-right: 60px;
+        transition: 0.3s;
+      }
+      @media (max-width: 992px) {
+        text-align: center;
+        margin: 0;
+      }
+    }
+  }
+  //end navbar//
+  // start artical//
+  .artical {
+    height: 70vh;
+    .row {
+      .col {
+        position: relative;
+        .w-100 {
+          padding-left: 55px;
+          padding-bottom: 70px;
+          height: 95%;
+        }
+        .image-3 {
+          position: absolute;
+          top: 65%;
+          left: 10%;
+          z-index: -1;
+        }
+        .image-2 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: -1;
+        }
+        .image-1 {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          z-index: -1;
+        }
+      }
+      .col:first-of-type {
+        display: flex;
+        align-items: center;
+        .card {
+          background-color: transparent;
+          border: none;
+          width: 100%;
+          margin-left: 150px;
+          h1 {
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 49px;
+            color: $first-color;
+            margin-bottom: 40px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 160%;
+            color: $second-color;
+            margin-bottom: 33px;
+          }
+          a {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 25px;
+            letter-spacing: 0.065em;
+            color: $third-color;
+            background: #2639ed;
+            border-radius: 60px;
+            padding: 20px 40px;
+          }
+        }
+      }
+    }
+  }
+  // end navbar//
+}

@@ -1,0 +1,114 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+header nav {
+  margin: 42px 0 40px;
+}
+header nav .navbar-brand {
+  width: 120px;
+  height: 34px;
+  padding: 0;
+  margin: 0;
+}
+header nav .navbar-brand img {
+  max-width: 100%;
+}
+header nav svg {
+  font-size: 25px;
+}
+header nav ul li :hover {
+  color: #2639ED !important;
+}
+header nav ul a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  letter-spacing: 0.01em;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-right: 60px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+@media (max-width: 992px) {
+  header nav ul {
+    text-align: center;
+    margin: 0;
+  }
+}
+header .artical {
+  height: 70vh;
+}
+header .artical .row .col {
+  position: relative;
+}
+header .artical .row .col .w-100 {
+  padding-left: 55px;
+  padding-bottom: 70px;
+  height: 95%;
+}
+header .artical .row .col .image-3 {
+  position: absolute;
+  top: 65%;
+  left: 10%;
+  z-index: -1;
+}
+header .artical .row .col .image-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+header .artical .row .col .image-1 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  z-index: -1;
+}
+header .artical .row .col:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .artical .row .col:first-of-type .card {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  margin-left: 150px;
+}
+header .artical .row .col:first-of-type .card h1 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 49px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+header .artical .row .col:first-of-type .card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #565656;
+  margin-bottom: 33px;
+}
+header .artical .row .col:first-of-type .card a {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 0.065em;
+  color: #FFFFFF;
+  background: #2639ed;
+  border-radius: 60px;
+  padding: 20px 40px;
+}
