@@ -1,0 +1,27 @@
+@use "./scss/variables" as *;
+.service {
+  margin-bottom: 94px;
+  :first-of-type .col {
+    @media (max-width: 992px) {
+      text-align: center;
+    }
+    h2 {
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 1.8;
+      color: $first-color;
+    }
+    p {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 1.6;
+      color: $fifty-color;
+    }
+  }
+  .group-col {
+    padding: 50px 10px 10px;
+    img {
+      max-width: 100%;
+    }
+  }
+}
