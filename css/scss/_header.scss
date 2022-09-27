@@ -51,7 +51,21 @@ header {
   .artical {
     height: 70vh;
     margin-bottom: 40px;
+    @media (max-width: 992px) {
+      height: 40vh;
+      margin-bottom: 0;
+    }
+    @media (max-width: 478px) {
+      height: 60vh;
+      margin-bottom: 40px;
+    }
     .row {
+      @media (max-width: 992px) {
+        height: 85% !important;
+      }
+      @media (max-width: 478px) {
+        height: 65% !important;
+      }
       .col {
         position: relative;
         .w-100 {

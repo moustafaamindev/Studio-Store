@@ -8,6 +8,10 @@
         position: absolute;
         left: 41%;
         bottom: 42%;
+        @media (max-width: 478px) {
+          left: 36%;
+          bottom: 37%;
+        }
       }
       h5 {
         font-weight: 600;

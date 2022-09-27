@@ -1,1 +1,103 @@
-@use './scss/variables' as *;
+@use "./scss/variables" as *;
+.subscribe {
+  margin-bottom: 107px;
+  .row {
+    background-image: url(../../img/Newsletter.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    @media (max-width: 992px) {
+      background-image: none;
+    }
+  }
+  .col:last-child {
+    position: relative;
+  }
+  h6 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.4;
+    color: $first-color;
+    margin-top: 98px;
+    margin-bottom: 17px;
+    @media (min-width: 992px) {
+      margin-left: 40px;
+    }
+    @media (max-width: 1200px) {
+      margin-top: 60px;
+    }
+    @media (max-width: 992px) {
+      text-align: center;
+    }
+  }
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: $fifty-color;
+    margin-bottom: 99px;
+    @media (max-width: 992px) {
+      text-align: center;
+      margin-bottom: 0;
+    }
+    @media (min-width: 992px) {
+      margin-left: 40px;
+    }
+  }
+  input[type="search"] {
+    padding: 29px 30px 29px 34px;
+    border: 1px solid #f1f1f1;
+    box-shadow: 10px 20px 50px rgba(0, 0, 0, 0.15);
+    border-radius: 60px;
+    width: 90%;
+    height: 90px;
+    color: $ten-color;
+    margin-top: 98px;
+    @media (max-width: 1200px) {
+      width: 100%;
+      margin-top: 70px;
+    }
+  }
+  input[type="button"] {
+    background: #2639ed;
+    border-radius: 60px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    border: none;
+    padding: 23px 50px;
+    position: absolute;
+    left: 52%;
+    bottom: 40%;
+    text-align: center;
+    @media (max-width: 1200px) {
+      left: 54%;
+      bottom: 43%;
+    }
+    @media (max-width: 992px) {
+      width: 33%;
+      left: 63%;
+      bottom: 7%;
+    }
+    @media (max-width: 768px) {
+      width: 37%;
+      left: 57%;
+      bottom: 7%;
+    }
+    @media (max-width: 478px) {
+      display: none;
+    }
+  }
+  .btn {
+    @media (min-width: 478px) {
+      display: none;
+    }
+    position: absolute;
+    bottom: 11%;
+    right: 7%;
+    font-size: 25px;
+    color: $third-color;
+    background-color: $four-color;
+    border-radius: 50%;
+  }
+}

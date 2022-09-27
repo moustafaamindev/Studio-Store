@@ -1,26 +1,39 @@
 @use "./scss/variables" as *;
 .about-us {
+  margin-bottom: 50px;
+  .row {
+    @media (max-width: 992px) {
+      flex-direction: column-reverse;
+    }
+  }
   .col:last-child {
     img {
       background-image: url(../../img/Ellipse\ 93.png);
       background-repeat: no-repeat;
       background-position: 25% 60%;
+      max-width: 100%;
+      @media (max-width: 992px) {
+        background-image: none;
+      }
     }
   }
   .slide {
     background-image: url(../../img/Dot.png);
     background-repeat: no-repeat;
     background-position: 30% 0%;
+    @media (max-width: 992px) {
+      background-image: none;
+    }
     ol {
       right: -23%;
       bottom: 25%;
       @media (max-width: 1200px) {
-        right: -28%;
-        bottom: -1%;
+        right: 9%;
+        bottom: -13%;
       }
       @media (max-width: 470px) {
-        right: -35%;
-        bottom: -22%;
+        right: 13%;
+        bottom: -27%;
       }
 
       li {
