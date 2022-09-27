@@ -3,6 +3,12 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -68,7 +74,7 @@ header .artical {
 }
 @media (max-width: 478px) {
   header .artical {
-    height: 60vh;
+    height: 40vh;
     margin-bottom: 40px;
   }
 }
