@@ -1,7 +1,7 @@
-@use "./scss/variables" as *;
+@use "./variables" as *;
 footer {
   .contact {
-    .row {
+    .footer-row {
       border-bottom: 1px solid #e4e4e4;
       border-top: 1px solid #e4e4e4;
       padding-top: 60px;
